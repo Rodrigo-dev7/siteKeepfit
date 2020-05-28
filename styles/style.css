@@ -8,15 +8,14 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-
 }
 
 header {
-  /* padding: 10px 0; */
+  padding: 10px 0;
   width: 100vw;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   color: #fff;
-  height: calc(100vh - 100px);
+  /* height: calc(100vh - 100px); */
   background: no-repeat center/cover url('/assets/bg.jpg');
 }
 
@@ -290,6 +289,7 @@ header nav ul li a:hover {
   justify-content: space-between;
   text-align: left;
   font-size: 1.9rem;
+  width: 100vw;
 }
 
 .text-about {
@@ -326,11 +326,15 @@ header nav ul li a:hover {
 
 /* ICONS */
 
+.icons {
+  /* width: 100vw; */
+}
+
 .icons ul {
-  width: 95.2%;
-  height: 20vh;
-  margin-top: -20px;
-  padding: 40px;
+  width: 100vw;
+  height: 23vh;
+  margin-top: 0px;
+  padding: 40px 0 ;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -433,8 +437,7 @@ header nav ul li a:hover {
 
 /* RESPONSIVIDADE */
 
-/* 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   body {
     padding: 0;
     margin: 0;
@@ -462,27 +465,26 @@ header nav ul li a:hover {
     height: 35px;
     font-size: 1em;
   }
-}
+} */
 
 
-@media (max-width: 915px) {
+@media (max-width: 980px) {
   body {
-    /* width: 100vw; */
+    width: 100vw;
   }
 
-  /* 
   header nav ul li a{
     margin: 0 8px;
-    padding: 0 8px; 
-    font-size: 1.5rem;
+    padding: 0 18px; 
+    font-size: 2rem;
     
-  } */
- */
-  /* .linha {
+  } 
+ 
+   .linha {
     width: 100%;
     max-width: 950px;
     margin: auto;
-  } */
+  } 
 
   .became {
     padding: 10px;
@@ -494,6 +496,10 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 800px) {
+
+  body{
+    width: 100vw;
+  }
   .menu-section nav ul a {
     display: flex;
     justify-content: space-around;
@@ -737,9 +743,10 @@ html {
 
   .icons ul {
     width: 100%;
-    max-width: 280px;
+    /* max-width: 280px; */
     height: 30vh;
     background-color: #000;
+    margin-top: -1px;
     display: flex;
     flex-wrap: wrap;
     padding-top: 240px;
